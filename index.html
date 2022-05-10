@@ -43,8 +43,9 @@
       document.getElementById('subTitle').innerText = dataMessage.subTitle;
       document.getElementById('title').innerText = dataMessage.title;
       document.getElementById('text').innerText = dataMessage.text;
-      let link = document.getElementById('link').innerText = dataMessage.link;
-      link.href = dataMessage.linkHref;
+      let linkMsg = document.getElementById('link');
+      linkMsg.innerText = dataMessage.link;
+      linkMsg.setAttribute('href', dataMessage.linkHref);
       document.getElementById('postscript').innerText = dataMessage.postscript;
     </script>
   </body>
