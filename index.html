@@ -25,7 +25,7 @@
       <h2 id="subTitle"></h2>
       <h1 id="title"></h1>
       <p id="text"></p>
-      <a id="link" target="_blank" href="about:blank"></a>
+      <a id="link" target="_blank"></a>
     </div>
     <p id="postscript"></p>
 
@@ -42,7 +42,8 @@
       document.getElementById('subTitle').innerText = dataMessage.subTitle;
       document.getElementById('title').innerText = dataMessage.title;
       document.getElementById('text').innerText = dataMessage.text;
-      document.getElementById('link').innerText = dataMessage.link;
+      let link = document.getElementById('link').innerText = dataMessage.link;
+      link.href = 'about:blank';
       document.getElementById('postscript').innerText = dataMessage.postscript;
     </script>
   </body>
