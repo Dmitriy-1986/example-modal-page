@@ -35,6 +35,7 @@
         title: 'Вітаю Вас З Великою Перемогою!',
         text: 'Українці кращі, але треба відбудовувати нову країну та розвивати Україну.',
         link: 'Відкрити Посилання Документу',
+        linkHref: 'about:blank',
         postscript: 'Слава Україні! Героям Слава!'
       }
 
@@ -42,8 +43,8 @@
       document.getElementById('subTitle').innerText = dataMessage.subTitle;
       document.getElementById('title').innerText = dataMessage.title;
       document.getElementById('text').innerText = dataMessage.text;
-      let link = document.getElementById('link').innerText = dataMessage.link;
-      link.href = 'about:blank';
+      let link = document.getElementById('link').innerText = 
+      link.href = dataMessage.linkHref;
       document.getElementById('postscript').innerText = dataMessage.postscript;
     </script>
   </body>
